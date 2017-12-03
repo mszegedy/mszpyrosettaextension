@@ -127,8 +127,9 @@ def pose_from_pdbstring(pdbstring, params=None):
     if params is not None:
         return pose_from_pdbstring_with_params(pdbstring, params)
     else:
-        return pr.rosetta.core.import_pose.pose_from_pdbstring(pr.Pose(),
-                                                               pdbstring)
+        pose = pr.Pose()
+        pr.rosetta.core.import_pose.pose_from_pdbstring(pose, pdbstring)
+        return pose
 
 def res_neighbors_p(pose, resnum1, resnum2, coarsep=False, bound=None):
     '''This compares the conformations of two residues in a pose, and returns a
