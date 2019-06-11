@@ -1,4 +1,4 @@
-#### by Michael Szegedy, 2017 Jun
+#### by Maria Szegedy, 2017 Jun
 #### for personal use at Khare Lab at Rutgers University
 
 '''"mszegedy's PyRosetta extension" is just some functions and classes I've
